@@ -38,7 +38,7 @@ The main reasoning engine, separate from the Gateway. Communicates via RPC(Remot
 **Iterates** — this is the loop: LLM → tool → result → LLM → tool → ... until the agent has a final response
 **Streams** — while it works, sends deltas in real time to the Gateway, which forwards them to the client
 
-**Integrazione omni-canale**
+**Integration omni-channel**
 Over 20 messaging channels — enterprise (Slack, Teams, Feishu, Mattermost) and personal (WhatsApp, Telegram, Signal, Discord, iMessage). The Gateway is the universal inbox/outbox.
 
 ![Logical architecture diagram](images/flow.jpg)
@@ -56,7 +56,7 @@ In the same WebSocket connection, exist three types of frames:
 
 The methods with side effects (`send`, `agent`) require an **idempotency key** to safely handle retries. Events are **never retransmitted**—a reconnecting client must actively update its state.
 
-### Autenticazione — due livelli
+### Authentication 
 
 **Livello 1 — Gateway auth** (applied to all connections, local and remote):
 Each connection must pass an access check — either via shared-secret (token or password in the `connect` frame), via identity header (Tailscale/trusted-proxy), or disabled completely (`mode: "none"`, only on private ingress).
