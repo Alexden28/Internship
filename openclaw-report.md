@@ -191,7 +191,7 @@ Resolves model and defaults, loads skills, calls `runEmbeddedPiAgent`. If the in
 
 System prompt constructed from: base prompt + skills prompt + bootstrap context + per-run overrides. Model token limits and reserve tokens for compaction are applied.
 
-#### 2.4 The iterative cycle (heart of the loop)
+#### 2.4 The iterative cycle 
 
 The model calls the LLM, streams deltas to the client, and decides whether to use a tool. If yes, it executes the tool, the result returns to the model, and the cycle begins again. If no, the loop moves to reply shaping.
 
