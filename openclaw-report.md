@@ -121,7 +121,7 @@ Each client signs a challenge nonce with its device identity. New devices requir
 ![Lifecycle](images/auth.jpg)
 
 ---
-
+The client is any control interface the operator uses to communicate with the Gateway via WebSocket. Specifically, this could be a Mac app, the CLI, the web admin, or an automation script. Messaging channels like Telegram, which are providers, are not clients, nor are nodes like iPhone or Android, which connect with a different role.
 ## 3. Agent Loop
 
 The Agent Loop is the complete and real execution of an agent: **intake → context assembly → model inference → tool execution → streaming replies → persistence.**
