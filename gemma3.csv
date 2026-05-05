@@ -1,0 +1,5 @@
+model,messages_system,messages_user,messages_assistant,messages_tool_calls,stream,options,think,tools
+gemma3:latest,System_prompt,My_message,N/A,N/A,true,{},false,not avaiable in this model
+gemma3:latest,N/A,N/A,Okay,N/A,streaming response until the end,N/A,false,N/A
+gemma3:latest,System_prompt,create it(my message),N/A,N/A,true,{},false,not avaiable in this model
+gemma3:latest,N/A,N/A,Okay,N/A,streaming response until the end,N/A,false,N/A

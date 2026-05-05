@@ -1,0 +1,7 @@
+model,messages_system,messages_user,messages_assistant,messages_tool_calls,stream,options,think,tools
+qwen2.5:7b,System_prompt,[timestamp]My message,N/A,N/A,true,{},false,session_status
+qwen2.5:7b,N/A,N/A,NO_REPLY,N/A,streaming response until the end,N/A,false,N/A
+qwen2.5:7b,System_prompt,[OpenClaw heartbeat poll]",N/A,false,true,{},false,session_status
+qwen2.5:7b,N/A,N/A,HEARTBEAT OK,N/A,streaming response until the end,N/A,false,N/A
+qwen2.5:7b,System_prompt,[timestamp]My message,N/A,N/A,true,{},false,session_status
+qwen2.5:7b,N/A,N/A,NO_REPLY,N/A,streaming response until the end,N/A,false,N/A

@@ -1,0 +1,9 @@
+model,messages_system,messages_user,messages_assistant,messages_tool_calls,stream,options,think,tools
+gpt-oss:20b,System_prompt,[timestamp]My message,N/A,N/A,true,{},medium,session_status
+gpt-oss:20b,N/A,N/A,Reply from model,N/A,streaming response until the end,N/A,false,error_call_tool
+gpt-oss:20b,System_prompt,[timestamp]My message,N/A,N/A,true,{},medium,session_status
+gpt-oss:20b,N/A,N/A,Response from LLM, container.exec + grep -R "Mario Rossi" -n,N/A,N/A,N/A,research_tool
+gpt-oss:20b,System_prompt,[timestamp]My message,N/A,N/A,true,{},medium,session_status
+gpt-oss:20b,N/A,N/A,Response from LLM,ls -R . | grep -i "Mario" -n,N/A,N/A,N/A,research_tool
+gpt-oss:20b,System_prompt,[timestamp]My message,N/A,N/A,true,{},medium,session_status
+gpt-oss:20b,N/A,N/A,Response from LLM,N/A,true, {},medium,N/A
